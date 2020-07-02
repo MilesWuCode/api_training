@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-tailwind.js', '~/plugins/repositories.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -53,7 +53,9 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: 'https://swapi.dev/api/'
+  },
   /*
    ** Build configuration
    */
