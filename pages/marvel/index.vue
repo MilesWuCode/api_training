@@ -1,15 +1,16 @@
 <template>
   <div class="container mx-auto">
     <h1 class="text-3xl">Marvel</h1>
-    <div>
+    <div class="flex flex-wrap items-stretch">
       <nuxt-link
         v-for="(people, index) in posts.data.results"
         :key="index"
         to="/"
+        class="w-1/3"
       >
         <div class="max-w-sm overflow-hidden rounded shadow-lg">
           <img
-            class="w-64"
+            class="w-full"
             :src="`${people.thumbnail.path}.${people.thumbnail.extension}`"
             :alt="people.name"
           />
@@ -37,12 +38,12 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'Marvel',
   async fetch({ store }) {
-    await store.dispatch('marvel/getAll', { page: 1, limit: 5 })
+    await store.dispatch('marvel/getAll', { page: 1, limit: 6 })
   },
   data() {
     return {
       currentPage: 1,
-      limit: 5
+      limit: 6
     }
   },
   computed: {
