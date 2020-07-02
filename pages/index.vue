@@ -9,11 +9,6 @@
         My great Nuxt.js project
       </h2>
       <div class="links">
-        <nuxt-link to="star-wars" class="button--green">
-          Star Wars
-        </nuxt-link>
-      </div>
-      <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>

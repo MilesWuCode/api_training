@@ -25,6 +25,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "md5": "^2.2.1",
     "nuxt": "^2.0.0",
     "vue-tailwind": "^0.4.6",
     "vuejs-paginate": "^2.1.0"
