@@ -1,4 +1,5 @@
-const resource = 'https://swapi.dev/api'
+const resource = '/starwars'
+
 export default ($axios) => ({
   all(data) {
     return $axios.get(`${resource}/people/?page=${data.page}`)

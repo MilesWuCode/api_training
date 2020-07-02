@@ -54,7 +54,17 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: 'https://swapi.dev/api/'
+    proxy: true
+  },
+  proxy: {
+    '/starwars/': {
+      target: 'https://swapi.dev/api',
+      pathRewrite: { '^/starwars/': '' }
+    },
+    '/marvel/': {
+      target: 'http://gateway.marvel.com/v1/public',
+      pathRewrite: { '^/marvel/': '' }
+    }
   },
   /*
    ** Build configuration

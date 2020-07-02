@@ -1,6 +1,6 @@
 import md5 from 'md5'
 
-const resource = 'http://gateway.marvel.com/v1/public/characters'
+const resource = '/marvel'
 const apikey = process.env.MARVEL_APIKEY
 const privateKey = process.env.MARVEL_PRIVATEKEY
 
@@ -10,7 +10,7 @@ export default ($axios) => ({
 
     const hash = md5(ts + privateKey + apikey)
 
-    return $axios.get(`${resource}`, {
+    return $axios.get(`${resource}/characters`, {
       params: {
         ...data,
         ts,
