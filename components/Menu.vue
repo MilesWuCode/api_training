@@ -4,7 +4,7 @@
       Index
     </nuxt-link>
     <nuxt-link to="star-wars" class="p-2">
-      Star Wars
+      StarWars
     </nuxt-link>
     <nuxt-link to="marvel" class="p-2">
       Marvel

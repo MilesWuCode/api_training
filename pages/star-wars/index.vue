@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-3xl">Star Wars</h1>
+    <h1 class="text-3xl">StarWars</h1>
     <div>
       <nuxt-link
         v-for="(people, index) in posts.results"

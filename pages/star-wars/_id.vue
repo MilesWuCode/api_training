@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-3xl">Star Wars - {{ post.name }}</h1>
+    <h1 class="text-3xl">StarWars - {{ post.name }}</h1>
   </div>
 </template>
 
