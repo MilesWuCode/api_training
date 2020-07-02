@@ -2,10 +2,9 @@
   <div class="container mx-auto">
     <h1 class="text-3xl">Marvel</h1>
     <div class="flex flex-wrap items-stretch">
-      <nuxt-link
+      <div
         v-for="(people, index) in posts.data.results"
         :key="index"
-        to="/"
         class="w-1/3"
       >
         <div class="max-w-sm overflow-hidden rounded shadow-lg">
@@ -21,7 +20,7 @@
             </p>
           </div>
         </div>
-      </nuxt-link>
+      </div>
     </div>
     <t-pagination
       v-model="currentPage"
