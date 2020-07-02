@@ -47,7 +47,9 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    // Doc: https://github.com/nuxt-community/apollo-module
+    '@nuxtjs/apollo'
   ],
   /*
    ** Axios module configuration
@@ -87,6 +89,13 @@ export default {
             }
           ]
         ]
+      }
+    }
+  },
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://graphql-pokemon.now.sh'
       }
     }
   }

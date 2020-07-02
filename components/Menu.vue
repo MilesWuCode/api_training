@@ -9,5 +9,8 @@
     <nuxt-link to="marvel" class="p-2">
       Marvel
     </nuxt-link>
+    <nuxt-link to="pokemon" class="p-2">
+      Pokemon
+    </nuxt-link>
   </div>
 </template>
